@@ -1,0 +1,95 @@
+body {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    background-color: #f8f8f8; /* Add this line for a light gray background */
+    color: #333; /* Dark gray text for better readability */
+    line-height: 1.6; /* Improved line spacing for readability */
+    margin: 0;
+    padding: 0;
+}
+
+.header-content {
+	background-color: #641220; /* Deep wine color */
+	display: flex;
+	flex-direction: column; /* Stack children vertically */
+	justify-content: center; /* Vertical centering */
+	align-items: center; /* Horizontal centering */
+	padding: 20px 0; /* Top and bottom padding for breathing space */
+	text-align: center; /* Center the text within the header */
+}
+
+.wine.card {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	font-size: 1em;
+	line-height: 1.5;
+	color: #555;  /* Slightly muted color for better contrast */
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 30px;
+}
+
+.wine.card .btn {
+    margin-top: 10px;
+}
+
+
+.wine.card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+
+.wine-image {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.wine-title {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+h1 {
+	font-weight: 600; /* Slightly bolder for prominence */
+	font-size: 2.5em; /* A larger size to make it stand out */
+	color: #ecf0f1; /* A light color for contrast against dark background */
+	margin-bottom: 10px; /* A bit of spacing between title and tagline */
+}
+
+p {
+	font-size: 400; /* Normal weight */
+	font-size: 1.2em; /* A bit larger than regular text for emphasis */
+	color: #bdc3c7; /* Slightly lighter color than the title */
+}
+
+footer {
+	background-color: #333;  /* Dark background for contrast */
+    color: #f8f8f8;  /* Light text for readability against the dark background */
+    padding: 20px 0;  /* Vertical padding for spacing */
+    text-align: center;  /* Center content */
+
+}
+
+footer a {
+    color: #f8f8f8;  /* Match the footer text color */
+    text-decoration: none;  /* Remove underlines */
+}
+
+footer a:hover {
+    text-decoration: underline;  /* Underline links on hover for interactivity */
+}
+
+@media (max-width: 576px) {
+    .wine-title {
+        font-size: 1.2em; 
+    }
+}
